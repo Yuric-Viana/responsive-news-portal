@@ -1,0 +1,43 @@
+.container {
+    --max-width: 22.5rem;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+}
+
+.gap-0\.5 {
+    gap: 0.5rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.desktop-only {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: space-between;
+}
+
+.grid {
+    display: grid;
+}
+
+@media (width >= 80rem) {
+    .container {
+        --max-width: 80rem;
+    }
+
+    .desktop-only {
+        display: block;
+    }
+}
