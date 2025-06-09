@@ -1,5 +1,5 @@
 #highlights {
-    & > div {
+    &>div {
         & figure {
             position: relative;
             margin-inline: auto;
@@ -35,7 +35,7 @@
         }
 
         & .cards {
-            & > figure {
+            &>figure {
                 & img {
                     width: 20.5rem;
                     height: 12.5rem;
@@ -43,7 +43,7 @@
             }
         }
 
-        @media (width >= 80rem) {
+        @media (width >=80rem) {
             & figure {
                 & img:nth-child(1) {
                     all: unset;
@@ -63,6 +63,14 @@
 
                 & figure img {
                     width: 18rem;
+                }
+
+                & h3 {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
                 }
             }
         }
