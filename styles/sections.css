@@ -83,11 +83,16 @@
 
 #weekly {
     & header {
+        margin-top: 3rem;
         border-top: 1px solid var(--stroke-color);
         color: var(--text-color-secondary);
     }
 
-    &>div {
+    & > div {
+        & figure:nth-child(1) {
+            margin-right: .8rem;
+        }
+       
         & figure {
             position: relative;
             gap: .5rem;

@@ -21,6 +21,11 @@ header {
 
         & li {
             white-space: nowrap;
+            cursor: pointer;
+        
+            &:hover {
+                color: var(--brand-color-dark);
+            }
         }
     }
 
