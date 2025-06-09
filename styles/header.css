@@ -5,6 +5,10 @@ header {
         padding-block: var(--py-sm);
     }
 
+    @media (width >= 80rem) {
+        --py-sm: 1.625rem;
+    }
+
     & ul {
         border: 1px solid var(--stroke-color);
         border-inline: none;

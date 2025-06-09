@@ -1,0 +1,70 @@
+#highlights {
+    & > div {
+        & figure {
+            position: relative;
+            margin-inline: auto;
+            border-radius: 5px;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                inset: 0;
+                top: 50%;
+                background: linear-gradient(180deg, transparent 0%, #020617 100%);
+            }
+
+            & img:nth-child(1) {
+                max-width: 20.5rem;
+                height: 26rem;
+                object-fit: cover;
+            }
+
+            & figcaption {
+                position: absolute;
+                bottom: 0;
+            }
+
+            & h1 {
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        }
+
+        & .cards {
+            & > figure {
+                & img {
+                    width: 20.5rem;
+                    height: 12.5rem;
+                }
+            }
+        }
+
+        @media (width >= 80rem) {
+            & figure {
+                & img:nth-child(1) {
+                    all: unset;
+                    width: 38rem;
+                }
+            }
+
+            & figure h1 {
+                -webkit-line-clamp: initial;
+                line-clamp: initial;
+                display: block;
+                width: unset;
+            }
+
+            & .cards {
+                grid-template-columns: repeat(2, 1fr);
+
+                & figure img {
+                    width: 18rem;
+                }
+            }
+        }
+    }
+}

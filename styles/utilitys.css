@@ -16,12 +16,28 @@
     gap: 2rem;
 }
 
+.py-sm {
+    padding-block: var(--py-sm);
+}
+
 .py-md {
     padding-block: var(--py-md);
 }
 
 .py-lg {
     padding-block: var(--py-lg);
+}
+
+.padding {
+    padding: var(--padding);
+}
+
+.padding-card {
+    padding: .75rem;
+}
+
+.grid-flow {
+    grid-auto-flow: row;
 }
 
 .desktop-only {
@@ -44,7 +60,7 @@
     display: grid;
 }
 
-@media (width >= 80rem) {
+@media (width >=80rem) {
     .container {
         --max-width: 80rem;
     }
@@ -52,4 +68,13 @@
     .desktop-only {
         display: block;
     }
+
+    .padding {
+        --padding: 2rem
+    }
+
+    .grid-flow {
+        grid-auto-flow: column;
+    }
+
 }
