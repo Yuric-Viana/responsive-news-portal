@@ -44,6 +44,10 @@
     display: none;
 }
 
+.margin {
+    margin-top: var(--margin-top);
+}
+
 .flex {
     display: flex;
 }

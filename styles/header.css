@@ -9,9 +9,12 @@ header {
         --py-sm: 1.625rem;
     }
 
-    & ul {
+    & nav {
         border: 1px solid var(--stroke-color);
         border-inline: none;
+    }
+
+    & ul {
         padding-block: .875rem;
         overflow-x: hidden;
         gap: 2rem;
