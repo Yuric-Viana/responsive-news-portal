@@ -16,6 +16,14 @@
     gap: 2rem;
 }
 
+.py-md {
+    padding-block: var(--py-md);
+}
+
+.py-lg {
+    padding-block: var(--py-lg);
+}
+
 .desktop-only {
     display: none;
 }
@@ -26,6 +34,10 @@
 
 .justify {
     justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
 }
 
 .grid {

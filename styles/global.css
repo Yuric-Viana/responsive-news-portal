@@ -18,10 +18,14 @@
     --text-lg: 800 1.5rem/135% var(--font-family);
     --text-md: 800 1rem/140% var(--font-family);
     --text-sm: 800 .875rem/140% var(--font-family);
-    --text-span: 600 .875rem/145% var(--font-family);
-    --text-p: .875rem/160% var(--font-family);
+    --text-p: bold 1rem/140% var(--font-family);
+    --text: 600 .875rem/145% var(--font-family);
 
     --px-lg: 1rem;
+    
+    --py-sm: 1rem;
+    --py-md: 1.5rem;
+    --py-lg: 2rem;
 
 }
 
@@ -52,6 +56,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+
+    color: var(--text-color-primary);
+    font: var(--text);
+    background-color: var(--bg-color);
 }
 ol, ul {
 	list-style: none;
@@ -67,4 +75,16 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (width >= 80rem) {
+    :root {
+        --px-lg: 2rem;
+    
+        --py-sm: 1.625rem
+    }
 }

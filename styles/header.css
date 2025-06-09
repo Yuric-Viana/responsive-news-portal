@@ -1,0 +1,20 @@
+header {
+    font: var(--text-p);
+
+    & > div {
+        padding-block: var(--py-sm);
+    }
+
+    & ul {
+        border: 1px solid var(--stroke-color);
+        border-inline: none;
+        padding-block: .875rem;
+        overflow-x: hidden;
+        gap: 2rem;
+
+        & li {
+            white-space: nowrap;
+        }
+    }
+
+}
