@@ -1,0 +1,25 @@
+main {
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 2rem;
+
+    grid-template-areas: 
+    'highlights highlights'
+    'weekly weekly'
+    'ai more';
+}
+
+#highlights {
+    grid-area: highlights;
+}
+
+#weekly {
+    grid-area: weekly;
+}
+
+#ai {
+    grid-area: ai;
+}
+
+aside {
+    grid-area: more;
+}

@@ -189,7 +189,6 @@ span {
     border-radius: .5rem;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: .5rem;
 }
 
 section header div.flex p {
@@ -202,6 +201,10 @@ section header div.flex p {
         background: url(../assets/icons/ArrowRight-hover.svg) no-repeat right;
         padding-right: 1.2rem;
     }
+}
+
+main {
+    padding-bottom: 5rem;
 }
 
 @media (width >= 80rem) {
