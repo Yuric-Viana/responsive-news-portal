@@ -1,11 +1,11 @@
 header {
     font: var(--text-p);
 
-    & > div {
+    &>div {
         padding-block: var(--py-sm);
     }
 
-    @media (width >= 80rem) {
+    @media (width >=80rem) {
         --py-sm: 1.625rem;
     }
 
@@ -16,17 +16,37 @@ header {
 
     & ul {
         padding-block: .875rem;
-        overflow-x: hidden;
         gap: 2rem;
 
         & li {
             white-space: nowrap;
             cursor: pointer;
-        
+
             &:hover {
                 color: var(--brand-color-dark);
             }
         }
     }
+}
 
+@media (width <= 1024px) {
+    header {
+        & nav {
+            width: 22rem;
+            overflow: hidden;
+            margin-inline: auto;
+        }
+
+        & ul {
+            padding-block: .875rem;
+            gap: 2rem;
+            animation: rolling 15s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes rolling {
+    to {
+        transform: translateX(-40rem);
+    }
 }

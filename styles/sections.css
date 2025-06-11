@@ -1,5 +1,5 @@
 #highlights {
-    &>div {
+    &>div {        
         & figure {
             position: relative;
             margin-inline: auto;
